@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Sampler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="waveform-container"></div> 
+    <div id="sampler">
+        <div class="display">Drop Audio Files on Keys</div>
+        <div class="keys">
+            <!-- Each key will act as a drop zone for audio files -->
+            <div class="key" id="key1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="key" id="key2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="key" id="key3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <!-- Add more keys as needed -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/3.3.3/wavesurfer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
